@@ -19,3 +19,35 @@
     font-weight: bolder;
     margin: auto;
 }
+.button-login{
+    padding: 8px;
+    background-color: #1450B4;
+    color: white;
+    border-radius: 20px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button-login:hover{
+    background-color: white;
+    color: #1450B4;
+    border: 1px solid #1450B4;
+    transition: 300ms;
+}
+.button-login>.icon{
+    color: #FAA01E;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+.buttons>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

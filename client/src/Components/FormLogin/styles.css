@@ -1,0 +1,21 @@
+.inputs>.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+}
+.inputs>.form>input{
+    width: 100%;
+    max-width: 300px;
+    border-bottom: 1px solid #0A1E41;
+    padding: 10px;
+    margin: auto;
+}
+
+.inputs>.form>label{
+    width: 100%;
+    max-width: 300px;
+    font-weight: bolder;
+    margin: auto;
+}

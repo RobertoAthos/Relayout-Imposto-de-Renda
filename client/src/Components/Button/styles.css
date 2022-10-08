@@ -1,0 +1,19 @@
+.button{
+    padding: 8px;
+    background-color: #1450B4;
+    color: white;
+    border-radius: 20px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button:hover{
+    background-color: white;
+    color: #1450B4;
+    border: 1px solid #1450B4;
+    transition: 300ms;
+}
+.button>.icon{
+    color: #FAA01E;
+}

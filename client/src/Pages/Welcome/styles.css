@@ -1,0 +1,48 @@
+.welcome-section{
+    width: 100%;
+    height: 20rem;
+    background-color: #E1E6F0;
+}
+.welcome-container{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+.welcome-text{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-text>h3{
+    color:#1450B4 ;
+    font-size: 1.5rem;
+}
+.welcome-text>p{
+    color: #051428;
+    font-size: 0.9rem;
+}
+.welcome-video{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #7DA0C8;
+    padding: 10px;
+    border-radius: 8px;
+}
+.welcome-text-2{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+    color: #051428;
+}
+.steps-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}

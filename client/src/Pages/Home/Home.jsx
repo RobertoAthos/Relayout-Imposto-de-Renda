@@ -11,6 +11,9 @@ export default function Home() {
              <div className='logo'>
                 <img src={RF} alt='receita federal logo'/>
              </div>
+             <div className='home-text'>
+               <h2>Aprenda a declarar seu Importo de Renda passo a passo.</h2>
+             </div>
              <div className='btn'>
                 <Link to='/login'><button>Começar <AiOutlineArrowRight className='icon'/></button></Link>
              </div>

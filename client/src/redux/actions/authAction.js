@@ -15,14 +15,49 @@ export const userRegister =  user => {
               type: "SIGN_UP",
               token: token.data,
             });
+            toast.success('Cadastro Finalizado com Sucesso !', {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              });
           })
           .catch((error) => {
             console.log(error.response);
-    
-            toast.error(error.response?.data, {
-              position: toast.POSITION.TOP_RIGHT,
-            });
           });
+          
       };
 }
 
+export const userLogin = (cpf,password) => {
+  return (dispatch) => {
+    axios
+      .post(`${url}/login`, {cpf,password})
+      .then((token) => {
+        localStorage.setItem("token", token.data);
+
+        dispatch({
+          type: "SIGN_IN",
+          token: token.data,
+        });
+        toast.info('Bem Vindo(a)!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
+      })
+      .catch((error) => {
+        console.log(error.message);
+        toast.error(error.response?.data, {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      });
+  };
+}

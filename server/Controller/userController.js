@@ -2,8 +2,25 @@ const bcrypt = require('bcryptjs')
 const User = require('../Models/userModel')
 const jwt = require('jsonwebtoken')
 
+const validateRegisterInputs = require('../validation/validation')
+
 const UserController = {
     register: async(req,res)=>{
+
+        const {isValid, errors} = validateRegisterInputs(req.body)
+
+        if (!isValid) {
+            return res.status(400).json(errors)
+        }
+
+        const {cpf,email,password,data,fullName} = req.body
+    
+
+        if(!cpf || !email || !password || !data || !fullName ){
+            return res.status(400).json({success:false, message: 'Provavelmente você faltou com alguns campos'})
+        }
+
+       
 
         const UserAlreadyExists = await User.findOne({cpf:req.body.cpf})
         if(UserAlreadyExists){

@@ -1,20 +1,58 @@
 import React from 'react'
-import StepCard from '../../Components/StepCard/StepCard'
-import StepTitles from '../../Components/StepTitles/StepTitles'
+import CardItem from '../../Components/CardItem/CardItem'
+import Title from '../../Components/Title/Title'
 import './styles.css'
 
 export default function Step1() {
+
   return (
     <section className='steps-section'>
         <div className='steps-container'>
-           <div className='steps-text'>
-              <StepCard number='1'/>
-              <StepTitles
-                title='Movimentações e patrimônio'
-                description='Selecione todas as opções ao lado que correspondem a atividades que você realizou e rendas recebidas em 2021.'
-              />
-           </div>
-        </div>
+            <div className='step-title-container'>
+                <Title
+                  number='1'
+                  title='Movimentações e patrimônios'
+                  description= 'Veja todas as opções ao lado que correspondem a atividades de rendas recebidas.'
+                />
+            </div>
+            <div className='step-features'>
+                <div className='features'>
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                    <CardItem
+                      name='Trabalho CLT'
+                    />
+                </div>
+            </div>
+        </div>  
     </section>
 
   )

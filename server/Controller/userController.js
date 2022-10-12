@@ -41,6 +41,7 @@ const UserController = {
         const UserAlreadyExists = await User.findOne({cpf:req.body.cpf})
         if(!UserAlreadyExists){
             return res.status(400).send('Cpf não existe/inválido')
+         
         }
 
         const loginUser = bcrypt.compareSync(req.body.password, UserAlreadyExists.password)
@@ -49,8 +50,9 @@ const UserController = {
         }
 
         const token = jwt.sign({_id: UserAlreadyExists._id}, process.env.TOKEN_SECRET)
-        res.header('authorizarion-token', token)
-        res.status(200).send('User Logged')
+        res.json(token)
+/*         res.status(200).send('User Logged') */
+       
     }
 }
 

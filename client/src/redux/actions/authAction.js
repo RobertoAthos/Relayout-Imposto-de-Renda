@@ -1,6 +1,5 @@
 import axios from 'axios'
 import {toast} from 'react-toastify'
-
 const url = 'http://localhost:5000/user'
 
 
@@ -32,10 +31,10 @@ export const userRegister =  user => {
       };
 }
 
-export const userLogin = (cpf,password) => {
+export const userLogin = (creds) => {
   return (dispatch) => {
     axios
-      .post(`${url}/login`, {cpf,password})
+      .post(`${url}/login`, creds)
       .then((token) => {
         localStorage.setItem("token", token.data);
 

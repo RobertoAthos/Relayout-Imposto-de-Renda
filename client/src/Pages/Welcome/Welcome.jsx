@@ -1,14 +1,18 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './styles.css'
 import Button from '../../Components/Button/Button'
 import { Link } from 'react-router-dom'
+import {useSelector} from 'react-redux'
 
 export default function Welcome() {
+  
+
+
   return (
     <section className='welcome-section'>
         <div className='welcome-container'>
             <div className='welcome-text'>
-                <h3>Olá "nome", seja Bem Vindo(a)</h3>
+                <h3>Olá "nome do usuário aqui", seja Bem Vindo(a)</h3>
                 <p>Abaixo terá um vídeo sobre como declarar seu imposto de Renda 2022, <br/> logo em seguida você pode conferir as principais etapas para o seu IRPF</p>
             </div>
             <div className='welcome-video'>

@@ -1,6 +1,18 @@
 .steps-section{
     width: 100%;
-    max-width: 37vw;
     height: 100vh;
     background-color: #E1E6F0;
+    background: linear-gradient(to left, #ffff 50%, #E1E6F0 50%);
+}
+.steps-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.step-title-container{
+    padding: 2rem;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
 }

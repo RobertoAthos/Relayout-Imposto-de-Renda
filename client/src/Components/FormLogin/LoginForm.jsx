@@ -11,15 +11,17 @@ export default function LoginForm() {
 
     const auth= useSelector((state) => state.auth);
     const dispatch = useDispatch();
-    const [user, setUser] = useState({
+    const navigate = useNavigate()
+
+    const [creds, setCreds] = useState({
       cpf: "",
       password: "",
     });
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      dispatch(userLogin(user.cpf, user.password));
-      setUser({ cpf: "", password: "" });
+      dispatch(userLogin(creds));
+      setCreds({ cpf: "", password: "" });
     };
       
         if (auth._id) return navigate('/welcome')
@@ -31,15 +33,15 @@ export default function LoginForm() {
                 <input 
                 type={'text'} 
                 placeholder='000.000.000-00' 
-                value={user.cpf}
-                onChange={e=>setUser({...user, cpf: e.target.value})}
+                value={creds.cpf}
+                onChange={e=>setCreds({...creds, cpf: e.target.value})}
                 />
                 <label>SENHA</label>
                 <input 
                 type={'password'} 
                 placeholder='XXXXXXXXXX'
-                value={user.password}
-                onChange={e=>setUser({...user, password: e.target.value})}
+                value={creds.password}
+                onChange={e=>setCreds({...creds, password: e.target.value})}
                 />
                 <div className='buttons'>
                     <div><button type='submit' className='button-login'>Acessar o Sistema <IoIosArrowForward/> </button></div>

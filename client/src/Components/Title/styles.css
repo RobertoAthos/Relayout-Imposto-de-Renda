@@ -1,0 +1,40 @@
+
+.title-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box-step{
+    width: 80px;
+    height: 80px;
+    background-color: #C3D2E6;
+    color: #1450B4;
+    border-radius: 8px;
+}
+.box-step>.text>span,p{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1rem;
+}
+.box-step>.text{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-text{
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem;
+}
+.title-text>h1{
+    color: #1450B4;
+    font-size: 1.5rem;
+}
+.title-text>p{
+    font-size: 1rem;
+    color: #051428;
+    text-align: left;
+}

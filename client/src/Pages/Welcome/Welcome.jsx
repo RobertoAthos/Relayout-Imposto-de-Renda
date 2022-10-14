@@ -1,8 +1,7 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import './styles.css'
 import Button from '../../Components/Button/Button'
 import { Link } from 'react-router-dom'
-import {useSelector} from 'react-redux'
 
 export default function Welcome() {
   
@@ -12,7 +11,7 @@ export default function Welcome() {
     <section className='welcome-section'>
         <div className='welcome-container'>
             <div className='welcome-text'>
-                <h3>Olá "nome do usuário aqui", seja Bem Vindo(a)</h3>
+                <h3>Olá</h3>
                 <p>Abaixo terá um vídeo sobre como declarar seu imposto de Renda 2022, <br/> logo em seguida você pode conferir as principais etapas para o seu IRPF</p>
             </div>
             <div className='welcome-video'>
@@ -22,7 +21,7 @@ export default function Welcome() {
                 <p>Veja agora as 7 etapas principais para o IRPF</p>
             </div>
             <div className='steps-btn'>
-                <Link to='/steps'><Button title='7 Etapas para sua declaração'/></Link>
+                <Link to='/step1'><Button title='7 Etapas para sua declaração'/></Link>
             </div>
         </div>
     </section>

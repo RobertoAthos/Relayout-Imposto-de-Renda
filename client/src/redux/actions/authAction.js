@@ -1,5 +1,6 @@
 import axios from 'axios'
 import {toast} from 'react-toastify'
+
 const url = 'http://localhost:5000/user'
 
 
@@ -42,15 +43,6 @@ export const userLogin = (creds) => {
           type: "SIGN_IN",
           token: token.data,
         });
-        toast.info('Bem Vindo(a)!', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          });
       })
       .catch((error) => {
         console.log(error.message);

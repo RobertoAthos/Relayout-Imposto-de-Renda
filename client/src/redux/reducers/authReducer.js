@@ -15,6 +15,7 @@ const initialState = {
 export const UserAuthReducer = (state = initialState, action)=>{
     switch (action.type) {
         case 'SIGN_UP':
+        case 'SIGN_IN':
             toast.success('Cadastro Finalizado com Sucesso !', {
                 position: "top-right",
                 autoClose: 5000,
@@ -28,21 +29,12 @@ export const UserAuthReducer = (state = initialState, action)=>{
             return {
                 ...initialState,
                 token: action.token,
-                fullName: user.name,
+                fullName: user.fullName,
                 cpf: user.cpf,
                 email: user.email,
                 password: user.password,
                 data: user.data,
                 _id: user._id
-            }
-            case 'SIGN_IN':
-                const userIN = jwtDecode(action.token)
-            return {
-                ...initialState,
-                token: action.token,  
-                cpf: userIN.cpf,
-                password: userIN.password,
-                _id: userIN._id
             }
             default: 
                 return state;

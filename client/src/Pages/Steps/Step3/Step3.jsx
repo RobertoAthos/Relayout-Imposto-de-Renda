@@ -3,9 +3,11 @@ import '../styles.css'
 import { Link } from 'react-router-dom'
 import Button from '../../../Components/Button/Button'
 import Title from '../../../Components/Title/Title'
+import Transition from "../../../Components/Transition/Transition";
 
 export default function Step3() {
   return (
+    <Transition direction='right'>
     <section className='steps-section'>
     <div className='steps-container'>
         <div className='step-title-container'>
@@ -52,5 +54,6 @@ export default function Step3() {
     </div>
 
 </section>
+    </Transition>
   )
 }

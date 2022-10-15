@@ -49,9 +49,11 @@ const UserController = {
             return res.status(400).send('Cpf não existe/inválido')
         }
 
-        const token = jwt.sign({_id: UserAlreadyExists._id}, process.env.TOKEN_SECRET)
+       const token = jwt.sign({_id: UserAlreadyExists._id}, process.env.TOKEN_SECRET)
+/*        res.status(200).send('User Logged') */
         res.json(token)
-/*         res.status(200).send('User Logged') */
+
+
        
     }
 }

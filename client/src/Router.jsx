@@ -8,6 +8,8 @@ import Step1 from './Pages/Steps/Step1/Step1'
 import Step2 from './Pages/Steps/Step2/Step2'
 import Step3 from './Pages/Steps/Step3/Step3'
 import Step4 from './Pages/Steps/Step4/Step4'
+import Step5 from './Pages/Steps/Step5/Step5'
+import End from './Pages/End/End'
 
 export default function Router() {
   return (
@@ -20,6 +22,8 @@ export default function Router() {
         <Route path='/step2' element={<Step2/>}/>
         <Route path='/step3' element={<Step3/>}/>
         <Route path='/step4' element={<Step4/>}/>
+        <Route path='/step5' element={<Step5/>}/>
+        <Route path='/final' element={<End/>}/>
    </Routes>
   )
 }

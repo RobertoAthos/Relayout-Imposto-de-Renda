@@ -18,10 +18,10 @@ export default function Welcome() {
                 <iframe width="600" height="315" src="https://www.youtube.com/embed/ThGcnGkx4gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div className='welcome-text-2'>
-                <p>Veja agora as 7 etapas principais para o IRPF</p>
+                <p>Veja agora as 5 etapas principais para o IRPF</p>
             </div>
             <div className='steps-btn'>
-                <Link to='/step1'><Button title='7 Etapas para sua declaração'/></Link>
+                <Link to='/step1'><Button title='5 Etapas para sua declaração'/></Link>
             </div>
         </div>
     </section>

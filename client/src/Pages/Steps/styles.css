@@ -41,7 +41,8 @@
 .one>.text>p{
     color: #051428;
     text-align: left;
-    font-weight: lighter;    
+    font-weight: lighter;   
+    text-align: justify; 
 }
 .one>.items{
     width: 100%;
@@ -75,4 +76,36 @@
 .pass-btns>a{
     text-decoration: underline;
     color: #1450B4;
+}
+.one>.box{
+    max-width: 600px;
+    margin: auto;
+    background-color: #E1E6F0;
+    border-radius: 20px;
+    padding: 40px;
+}
+.one>.text>.box{
+    max-width: 600px;
+    margin: auto;
+    background-color: #E1E6F0;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 2rem 0 2rem 0;
+}
+.one>.text>.box>ul>li{
+    list-style: lower-roman;
+    margin: 25px 0px 25px 0px;
+    color: #051428;
+}
+.one>.box>ul>li{
+    list-style: disc;
+    margin: 25px 0px 25px 0px;
+    color: #051428;
+}
+.one>.text>ul>li{
+    margin: 20px;
+}
+.strong-color{
+    color: #1450B4;
+    font-size: 1.1rem;
 }

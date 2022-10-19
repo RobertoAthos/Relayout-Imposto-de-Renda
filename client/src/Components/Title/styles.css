@@ -38,3 +38,30 @@
     color: #051428;
     text-align: left;
 }
+@media(max-width:800px){
+    .title-text>h1{
+        color: #1450B4;
+    }
+    .title-text>p{
+        font-size: 0.7rem;
+    }
+    .box-step{
+        width: 100%;
+        background-color: #C3D2E6;
+    }
+    .title-container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-step>.text{
+        width: 100%;
+        text-align: center;
+    }
+    .title-text{
+        width: 100%;
+        max-width:100%;
+        margin: 20px 0px 20px 0px;
+    }
+}
+

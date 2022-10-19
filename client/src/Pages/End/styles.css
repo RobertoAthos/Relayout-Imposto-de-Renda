@@ -20,3 +20,17 @@
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+@media(max-width:700px){
+    .end-container{
+        flex-direction: column;
+    }
+    .end-img>img{
+        max-width: 300px;
+    }
+    .end-text>h3{   
+        font-size: 1rem;
+    }
+    .end-text>p{
+        font-size: 0.8rem;
+    }
+}

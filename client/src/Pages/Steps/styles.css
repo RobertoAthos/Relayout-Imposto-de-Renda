@@ -65,6 +65,7 @@
     color: white;
     transition: 300ms;
 }
+
 .pass-btns{
     width: 500px;
     display: flex;
@@ -109,4 +110,66 @@
 .strong-color{
     color: #1450B4;
     font-size: 1.1rem;
+}
+
+@media(max-width:1500px){
+    .steps-section{
+        background: linear-gradient(to top, #ffff 76%, #E1E6F0 76%);
+    }
+    .step-features{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .pass-btns{
+        position: fixed;
+        bottom: 2rem;
+        right: 4rem; 
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.267);
+    }
+}
+@media(max-width:700px){
+    .one>.text{
+        width: 100%;
+        max-width: 300px; 
+        margin: 20px 0px 20px 0px;
+    }
+    .one>.text>h3{
+        text-align: center;
+    }
+    .one>.text>p{
+        text-align: justify; 
+        font-size: 0.8rem;
+    }
+    .one>.items{
+    width: 100%;
+       flex-direction: column;
+       justify-content: center;
+       margin: 20px 0px 20px 0px;
+       display: flex;
+    }
+    .pass-btns{
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .step-features{
+        overflow: hidden;
+    }
+    .one>.box{
+        max-width: 400px;
+        margin: 20px 0px 20px 0px;
+    }
+}
+@media(max-width:500px){
+    .one>.box{
+        max-width: 300px;
+    }
 }

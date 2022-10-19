@@ -10,11 +10,14 @@
 }
 .welcome-text{
     width: 100%;
+    max-width: 800px;
+    margin: auto;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: justify;
 }
 .welcome-text>h3{
     color:#1450B4 ;
@@ -34,11 +37,35 @@
     padding: 10px;
     border-radius: 8px;
 }
+@media(max-width:700px){
+    .welcome-video{
+        max-width: 400px;
+    }
+    .welcome-text{
+        max-width: 400px;
+    }
+    .welcome-text>h3{
+        font-size: 1.4rem;
+    }
+    .welcome-text>p{
+        color: #051428;
+        font-size: 0.8rem;
+    }
+
+}
 .welcome-text-2{
     text-align: center;
     margin: 20px 0 20px 0;
     font-weight: bold;
     color: #051428;
+}
+@media(max-width:500px){
+    .welcome-video{
+        max-width: 300px;
+    }
+    .welcome-text-2>p{
+        font-size: 0.8rem;
+    }
 }
 .steps-btn{
     width: 100%;

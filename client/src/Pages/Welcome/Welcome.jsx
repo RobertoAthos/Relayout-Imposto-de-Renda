@@ -12,7 +12,7 @@ export default function Welcome() {
         <div className='welcome-container'>
             <div className='welcome-text'>
                 <h3>Olá</h3>
-                <p>Abaixo terá um vídeo sobre como declarar seu imposto de Renda 2022, <br/> logo em seguida você pode conferir as principais etapas para o seu IRPF</p>
+                <p>Abaixo terá um vídeo sobre como declarar seu imposto de Renda 2022,  logo em seguida você pode conferir as principais etapas para o seu IRPF</p>
             </div>
             <div className='welcome-video'>
                 <iframe width="600" height="315" src="https://www.youtube.com/embed/ThGcnGkx4gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

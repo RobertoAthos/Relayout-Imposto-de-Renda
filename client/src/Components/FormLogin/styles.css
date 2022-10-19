@@ -19,6 +19,14 @@
     font-weight: bolder;
     margin: auto;
 }
+@media(max-width:390px){
+    .inputs>.form>input{
+        max-width: 250px;
+    }
+    .inputs>.form>label{
+        max-width: 250px;
+    }
+}
 .button-login{
     padding: 8px;
     background-color: #1450B4;

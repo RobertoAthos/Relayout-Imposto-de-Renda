@@ -112,7 +112,7 @@
     font-size: 1.1rem;
 }
 
-@media(max-width:1500px){
+@media(max-width:1200px){
     .steps-section{
         background: linear-gradient(to top, #ffff 76%, #E1E6F0 76%);
     }

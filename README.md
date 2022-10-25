@@ -2,6 +2,8 @@
 
 Aplicação criada com o intuíto de guiar as pessoas a fazerem seu imposto de Renda.
 
+<a href='https://github.com/RobertoAthos/Relayout-Imposto-de-Renda/blob/main/README-English.md'>Click here to see the english version of the read.me</a>
+
 <div>
   <img style="width:500px ;height:300px;" src="https://user-images.githubusercontent.com/94712001/197338792-fc5a7fcc-3900-4ca2-a274-ce43ebf66af5.png" alt="exemplo imagem">
   <img style="width:500px ;height:300px;" src="https://user-images.githubusercontent.com/94712001/197339278-3504e7f3-1f85-4fdd-8c41-923d4476e250.png" alt="exemplo imagem">

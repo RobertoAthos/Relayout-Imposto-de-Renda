@@ -1,7 +1,6 @@
 import React from 'react'
 import './styles.css'
 import RF2 from '../../Assets/receita federal 02.png'
-import { Link } from 'react-router-dom'
 import LoginForm from '../../Components/FormLogin/LoginForm'
 
 

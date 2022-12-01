@@ -5,6 +5,7 @@ import { userRegister } from '../../redux/actions/authAction'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import {Link} from 'react-router-dom'
+import Loading from '../Loading/Loading'
 
 export default function RegisterForm() {
 
@@ -19,6 +20,8 @@ export default function RegisterForm() {
     password: ''
   })
 
+  const[loading,setLoading] = useState(false)
+
   const handleSubmit = (e) => {
     try {
       e.preventDefault()
@@ -30,6 +33,7 @@ export default function RegisterForm() {
         data: '',
         password: ''
       })
+      setLoading(true)
     } catch (error) {
       toast('Erro na hora de fazer Cadastro', {
         position: toast.POSITION.TOP_RIGHT
@@ -71,7 +75,7 @@ export default function RegisterForm() {
           value={user.password}
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
-        <div className='btn-register'><button className='register-btn'>Cadastrar-se</button></div>
+        {loading ? <Loading/> : <div className='btn-register'><button className='register-btn'>Cadastrar-se</button></div>}
         <Link to='/login'>Já tem conta ? Então faça o login</Link>
       </form>
       <ToastContainer />

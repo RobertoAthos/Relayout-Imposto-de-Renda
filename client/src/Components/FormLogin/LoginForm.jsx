@@ -5,6 +5,7 @@ import {IoIosArrowForward} from 'react-icons/io'
 import { userLogin } from '../../redux/actions/authAction'
 import {useDispatch, useSelector} from 'react-redux'
 import {ToastContainer, toast} from 'react-toastify'
+import Loading from '../Loading/Loading'
 
 
 export default function LoginForm() {
@@ -17,11 +18,13 @@ export default function LoginForm() {
       cpf: "",
       password: "",
     });
+    const[loading,setLoading] = useState(false)
   
     const handleSubmit = (e) => {
       e.preventDefault();
       dispatch(userLogin(creds));
       setCreds({ cpf: "", password: "" });
+      setLoading(true)
     };
       
         if (auth._id) return navigate('/welcome')
@@ -44,7 +47,7 @@ export default function LoginForm() {
                 onChange={e=>setCreds({...creds, password: e.target.value})}
                 />
                 <div className='buttons'>
-                    <div><button type='submit' className='button-login'>Acessar o Sistema <IoIosArrowForward/> </button></div>
+                    {loading ? <Loading/> : <div><button type='submit' className='button-login'>Acessar o Sistema <IoIosArrowForward/> </button></div>}
                     <Link to='/register' className='link-register'>Ainda não estou cadastrado(a)</Link>
                 </div>
             </form>

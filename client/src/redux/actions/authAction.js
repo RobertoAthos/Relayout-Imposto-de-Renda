@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {toast} from 'react-toastify'
 
-const url = 'https://irpf-api.herokuapp.com/user'
+const url = 'https://imposto-de-renda-api.onrender.com/user'
 
 
 export const userRegister =  user => {

@@ -29,7 +29,7 @@ Senha - teste123
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [ ] Adicionar proteção de rotas
-- [ ] Adicionar loaders
+- [x] Adicionar loaders
 
 
 ## Stacks Utilizadas
